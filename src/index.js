@@ -235,3 +235,5 @@ async function run() {
 }
 
 run().then();
+
+module.exports = run;
