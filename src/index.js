@@ -21,6 +21,7 @@ async function run() {
         console.log("REMOVE foo bar\t REMOVEALL foo\t\t CLEAR");
         console.log("KEYEXISTS foo\t MEMBEREXISTS foo bar\t ALLMEMBERS");
         console.log("ITEMS\t\t MAP\t\t\t HELP");
+        console.log("EXIT");
       }
     }
 
@@ -218,6 +219,16 @@ async function run() {
         console.log(") ERROR, Incorrect number of arguments.\n");
       } else {
         console.log("dictionary: ", dict, "\n");
+      }
+    }
+
+    // EXIT
+    // This is an extra command that allows the user to exit the app.
+    if (splitInputArray[0] == "EXIT") {
+      if (splitInputArray.length !== 1) {
+        console.log(") ERROR, Incorrect number of arguments.\n");
+      } else {
+        return false;
       }
     }
   }
