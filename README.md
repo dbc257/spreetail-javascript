@@ -257,3 +257,27 @@ Example:
 3) bang: bar
 4) bang: baz
 ```
+
+### HELP
+
+Displays a list of the available commands for the app.
+
+```
+ADD foo bar      KEYS                    MEMBERS foo
+REMOVE foo bar   REMOVEALL foo           CLEAR
+KEYEXISTS foo    MEMBEREXISTS foo bar    ALLMEMBERS
+ITEMS            MAP                     HELP
+EXIT
+```
+
+### MAP
+
+Displays the JavaScript Map used for the dictionary.
+
+```
+dictionary:  Map(1) { 'foo' => [ 'bar', 'baz' ] }
+```
+
+### EXIT
+
+Exits out of the command-line interface.
