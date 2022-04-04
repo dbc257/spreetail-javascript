@@ -1,6 +1,48 @@
-The Multi-Value Dictionary app is a command line application that stores a multivalue dictionary in memory. All keys and members are strings.
+# MultiValueDictionary
 
-It should support the following commands.
+MultiValueDictionary is a command-line interface which allows a user to manage in-memory key-member(s) pairings. It allows the user to perform a variety of different commands with the multi-value dictionary such as the following:
+
+- Add new key-member pairs
+- Add members to an existing key
+- Remove members from a pair
+- Remove keys
+- List all keys, members, or key-member pairings
+- Clear the multi-value dictionary
+- Check if a key or member of a key exists
+
+## Getting-Started
+
+In order to use the application, you must first clone the repository to your local machine or download the zip file.
+
+## Prerequisites
+
+You will preferably need the latest version of a text editor.
+
+#### VSCode is my go to: https://code.visualstudio.com/
+
+## Installation
+
+In your terminal clone the repository to your local machine using git clone:
+
+```
+git clone https://github.com/dbc257/spreetail-javascript.git
+```
+
+Move to your newly cloned repository by entering the following in your terminal:
+
+```
+cd spreetail-javascript && npm install
+```
+
+To run the app, enter the following in your terminal while still in the project directory:
+
+```
+npm start
+```
+
+## Interacting with the Command-Line Interface
+
+As mentioned above, there are a variety of commands a user can input to interact with the multi-value dictionary.
 
 ### KEYS
 
